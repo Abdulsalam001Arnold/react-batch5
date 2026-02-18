@@ -11,7 +11,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Homepage/>}/>
+          <Route path="/" element={<Homepage name={"Batch 5"} email={"batch5@gmail.com"}/>}/>
           <Route path="/about" element={<Aboutpage/>}/>
         </Routes>
       </BrowserRouter>
