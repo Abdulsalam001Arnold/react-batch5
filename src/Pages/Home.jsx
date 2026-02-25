@@ -36,11 +36,17 @@ export default function Homepage({name, email}) {
            Hello {name}, my email is {email}
 
            <div>
+               <section className="w-full grid grid-cols-3 items-center justify-between gap-3">
             {characters.map((character, index) => (
-                <div key={index}>
-                <img src={character.image} alt="" width={500} height={500} />
+                <div key={index} className="flex flex-col items-center justify-center gap-2 border border-gray-500 rounded-lg">
+                    <div className="w-[4rem]">
+                <img src={character.image} alt="" />
+                    </div>
+                    <p className="text-xl font-bold">{character.name}</p>
+                    <p className="text-xl font-bold">{character.ki}</p>
                 </div>
             ))}
+            </section>
            </div>
         </div>
     )
